@@ -1,14 +1,19 @@
 # BackEnd
 
 
-Está es un API para realizar el CRUD de una tabla Libro.
+API con las funciones necesarias para un CRUD de una tabla Libro.
 
 REQUISITOS
-SQL SERVER, JDBC SQL SERVER, JDK, JEE, APACHE NETBEANS
+SQL SERVER
+JDBC SQL SERVER
+JDK
+JEE
+APACHE NETBEANS
 
 PROCEDIMIENTO
-Se debe crear la tabla en cualquier base de datos en SQL SERVER mediante el siguiente script:
+Creear una tabla en cualquier base de datos que usted disponga ejecutando el siguiente script:
 
+//Script
 
   CREATE TABLE [dbo].[Libro](
   [nombre] [varchar](150) NOT NULL,
@@ -24,7 +29,6 @@ Se debe crear la tabla en cualquier base de datos en SQL SERVER mediante el sigu
   ) ON [PRIMARY]
   
   
-  
-Seguidamente se debe levantar el servidor de aplicaciones y configurar el Connection Pools y JDBC Resources con los datos de la base de datos respectivamente. Es importante verificar el PING de la conexión con la base.
+Una vez creada la base de datos con su tabla, empezamos a levantar nuestro servidor de Glass Fish para proceder a configurar las conexciones Connection Pools y JDBC Resources con los datos de la base de datos respectivamente. Es importante verificar el PING de la conexión con la base sea correcto.
 
 Finalmente el API con su método principal GET, se encontrará en el siguiente URL = http://localhost:8080/Libro/api/libros
